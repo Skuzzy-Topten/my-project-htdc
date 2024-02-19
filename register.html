@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="./logo/logo.png" />
+		<title>YOON SKIN</title>
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./fonts/roboto/roboto.css" />
+		<link rel="stylesheet" href="./fonts/jost/jost.css" />
+		<link rel="stylesheet" href="./fontawesome/css/all.css" />
+		<link rel="stylesheet" href="./transition/css/transition.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid max-width bg-on">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand" href="./index.html">
+							<img src="./logo/logo.png" class="logo" alt="Logo" />
+						</a>
+						<button
+							class="navbar-toggler border-0 shadow-none"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar"
+							aria-controls="offcanvasNavbar"
+							aria-label="Toggle navigation"
+						>
+							<i class="fa-solid fa-bars"></i>
+						</button>
+						<div
+							class="offcanvas offcanvas-end"
+							tabindex="-1"
+							id="offcanvasNavbar"
+							aria-labelledby="offcanvasNavbarLabel"
+						>
+							<div class="offcanvas-header ps-4 pe-4">
+								<h5 class="offcanvas-title p-2" id="offcanvasNavbarLabel">
+									HTDC Myanmar
+								</h5>
+								<button
+									type="button"
+									class="btn border-0 shadow-none"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								>
+									<i class="fa-solid fa-xmark fa-lg"></i>
+								</button>
+							</div>
+							<div class="offcanvas-body justify-content-end">
+								<ul
+									class="navbar-nav tablet-mobile-menu ms-auto mb-2 mb-lg-0 d-xl-none d-lg-none d-md-block d-sm-block px-3"
+								>
+									<li class="nav-item active">
+										<a class="nav-link" href="./index.html"> Yoon Skin </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="./bb-lab.html"> BB LAB </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="./pyunkang-yul.html">
+											Pyunkang Yul
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="./lacto-fit.html"> Lacto Fit </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="./i-m-vita.html"> I'm Vita </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="./about-us.html"> About Us </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="./contact-us.html">
+											Contact Us
+										</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link"
+											data-bs-toggle="dropdown"
+											href="#"
+											role="button"
+											aria-expanded="false"
+											><i class="fa-solid fa-circle-user"></i> Kyaw Kyaw
+											<i class="fa-solid fa-angle-down ps-2"></i
+										></a>
+										<ul class="dropdown-menu border-0 ps-3">
+											<li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+											<li><a class="dropdown-item" href="./order.html">Order</a></li>
+											<li><a class="dropdown-item" href="./favourite.html">Favourite</a></li>
+											<li><a class="dropdown-item" href="./index.html">Logout</a></li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+											<i class="fa-solid fa-bag-shopping fa-lg pe-1"></i> CART
+										</a>
+									</li>
+								</ul>
+								<form class="px-3">
+									<div class="input-group">
+										<input
+											class="form-control form-control-header-search"
+											type="search"
+											placeholder="Search ..."
+											aria-label="Search"
+										/>
+										<button
+											class="btn btn-search btn-header-search"
+											type="submit"
+										>
+											<i class="fa-solid fa-magnifying-glass"></i>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="container d-none d-xl-block d-lg-block">
+					<nav class="navbar navbar-expand-lg">
+						<div class="container-fluid p-0">
+							<ul
+								class="navbar-nav desktop-menu me-auto mb-2 mb-lg-0 flex-wrap"
+							>
+								<li class="nav-item active">
+									<a class="nav-link" href="./index.html"> Yoon Skin </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./bb-lab.html"> BB LAB </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./pyunkang-yul.html">
+										Pyunkang Yul
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./lacto-fit.html"> Lacto Fit </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./i-m-vita.html"> I'm Vita </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./about-us.html"> About Us </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./contact-us.html"> Contact Us </a>
+								</li>
+							</ul>
+							<ul
+								class="navbar-nav desktop-menu user-nav ms-auto mb-2 mb-lg-0 px-2 justify-content-end"
+							>
+								<li class="nav-item dropdown user-dropdown-menu">
+									<a
+										class="nav-link"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<i class="fa-solid fa-circle-user"></i> Kyaw Kyaw
+										<i class="fa-solid fa-angle-down ps-2"></i>
+									</a>
+									<ul class="dropdown-menu user-dropdown">
+										<li><a class="dropdown-item" href="./profile.html"> Profile </a></li>
+										<li><a class="dropdown-item" href="./order.html"> Order </a></li>
+										<li>
+											<a class="dropdown-item" href="./favourite.html"> Favourite </a>
+										</li>
+										<li><a class="dropdown-item" href="./index.html"> Logout </a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+										<i class="fa-solid fa-bag-shopping pe-1"></i> Cart
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container-fluid">
+        <div class="container py-5">
+					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+						<div class="offcanvas-header border-bottom">
+							<h5 class="offcanvas-title" id="offcanvasCartLabel">
+								Add to Cart
+							</h5>
+							<button type="button" class="btn border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+						</div>
+						<div class="offcanvas-header border-bottom p-0">
+							<div class="col text-center p-2">
+								<span class="text-secondary">
+									(3 Items)
+								</span> <span class="text-green">127,000</span> Ks
+							</div>
+						</div>
+						<div class="offcanvas-body">
+							<div class="col p-2">
+								<div class="table-responsive">
+									<table class="table text-center align-middle">
+										<tbody>
+											<tr>
+												<td>
+													<img src="./products/bb-lab/01.webp" class="offcanvas-product-image" alt="product image">
+												</td>
+												<td>
+													<div class="col text-start p-2">
+														<h5 class="offcanvas-product-title px-2 pb-1 m-0">
+															BB LAB Low ...
+														</h5>
+														<p class="offcanvas-product-price px-2 pb-1 m-0">
+															40,000 Ks
+														</p>
+														<p class="text-secondary offcanvas-product-item px-2 m-0">
+															1 Item
+														</p>
+													</div>
+												</td>
+												<td>
+													<button type="submit" class="btn btn-remove">
+														<i class="fa-solid fa-trash-can"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<img src="./products/bb-lab/02.webp" class="offcanvas-product-image" alt="product image">
+												</td>
+												<td>
+													<div class="col text-start p-2">
+														<h5 class="offcanvas-product-title px-2 pb-1 m-0">
+															BB LAB Low ...
+														</h5>
+														<p class="offcanvas-product-price px-2 m-0">
+															45,000 Ks
+														</p>
+														<p class="text-secondary offcanvas-product-item px-2 m-0">
+															1 Item
+														</p>
+													</div>
+												</td>
+												<td>
+													<button type="submit" class="btn btn-remove">
+														<i class="fa-solid fa-trash-can"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<img src="./products/bb-lab/03.webp" class="offcanvas-product-image" alt="product image">
+												</td>
+												<td>
+													<div class="col text-start p-2">
+														<h5 class="offcanvas-product-title px-2 pb-1 m-0">
+															BB LAB Low ...
+														</h5>
+														<p class="offcanvas-product-price px-2 m-0">
+															42,000 Ks
+														</p>
+														<p class="text-secondary offcanvas-product-item px-2 m-0">
+															1 Item
+														</p>
+													</div>
+												</td>
+												<td>
+													<button type="submit" class="btn btn-remove">
+														<i class="fa-solid fa-trash-can"></i>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col text-center p-2">
+								<a href="./cart.html" class="btn btn-update">
+									<i class="fa-solid fa-bag-shopping"></i> CART
+								</a>
+								<a href="./checkout.html" class="btn btn-update">
+									<i class="fa-solid fa-circle-check"></i> CHECKOUT
+								</a>
+							</div>
+						</div>
+					</div>
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 text-center p-2 mx-auto">
+            <img src="logo/logo.png" class="site-logo" alt="logo">
+            <h5 class="site-title p-2 m-0">HTDC</h5>
+          </div>
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 p-2 mx-auto">
+            <h5 class="text-green px-2 m-0">
+              WELCOME!
+            </h5>
+            <p class="text-secondary pt-1 px-2 m-0">
+              Register your account
+            </p>
+          </div>
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 p-2 mx-auto">
+            <form>
+              <div class="col p-2">
+								<label class="pb-1">
+									Full Name <span class="text-danger">*</span>
+								</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col p-2">
+								<label class="pb-1">
+									Phone No. <span class="text-danger">*</span>
+								</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col p-2">
+								<label class="pb-1">
+									Email
+								</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="col p-2">
+								<label class="pb-1">
+									Password <span class="text-danger">*</span>
+								</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="col text-center p-2">
+                <button type="submit" class="btn btn-sign-up">
+                  SIGN UP
+                </button>
+              </div>
+            </form>
+          </div>
+					<div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 p-2 mx-auto">
+            <div class="text-center">
+							<a href="#" class="btn btn-social-login">
+	            	<img src="./social/logo/google.webp" class="social-login-logo p-1" alt="Google Login">
+								<span class="align-middle">Sign in with Google</span>
+	            </a>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 p-2 mx-auto">
+            <p class="text-secondary text-center p-2 m-0">
+              Already have an account? <a href="./login.html" class="login">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+		</main>
+		<footer>
+			<div
+				class="container-fluid max-width border-top border-start border-end p-0"
+			>
+				<div class="container">
+					<div class="col-xl-12 marquee-container my-auto">
+						<div class="marquee-content">
+							<a href="./index.html" class="pe-5">
+								<img
+									src="./brand/logo/Yoon Skin.png"
+									class="brand-logo"
+									alt="Yoon Skin"
+								/>
+							</a>
+							<a href="./bb-lab.html" class="pe-5">
+								<img
+									src="./brand/logo/BB LAB.png"
+									class="brand-logo"
+									alt="BB LAB"
+								/>
+							</a>
+							<a href="./pyunkang-yul.html" class="pe-5">
+								<img
+									src="./brand/logo/Pyunkang Yul.png"
+									class="brand-logo"
+									alt="Pyunkang Yul"
+								/>
+							</a>
+							<a href="./lacto-fit.html" class="pe-5">
+								<img
+									src="./brand/logo/LACTO-FIT.png"
+									class="brand-logo"
+									alt="LACTO-FIT"
+								/>
+							</a>
+							<a href="./i-m-vita.html" class="pe-5">
+								<img
+									src="./brand/logo/i'm vita.png"
+									class="brand-logo"
+									alt="I'm Vita"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid max-width border-top bg-on">
+				<div class="container">
+					<div class="row py-3">
+						<div class="col-xl-12 col-md-12 col-sm-12 col-11 mx-auto">
+							<div class="col text-lg-end text-start p-2">
+								<a href="./return-policy.html" class="footer-link p-2"
+									><i class="fa-solid fa-scroll pe-1"></i> Return Policy
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-11 mx-auto">
+							<div class="col p-2">
+								<h6 class="text-xl-center text-lg-start p-2 m-0">
+									Payment Method
+								</h6>
+								<div class="col text-xl-center text-lg-start p-2">
+									<a
+										href="#"
+										class="btn btn-footer-bank p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="KBZPay"
+									>
+										<img
+											src="./bank/logo/kbz-pay.png"
+											class="footer-payment-method-icon"
+											alt="KBZPAY"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-bank p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="AYAPAY"
+									>
+										<img
+											src="./bank/logo/aya-pay.png"
+											class="footer-payment-method-icon"
+											alt="AYAPAY"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-bank p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="WavePay"
+									>
+										<img
+											src="./bank/logo/wave-pay.png"
+											class="footer-payment-method-icon"
+											alt="WAVEPAY"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-bank p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="KBZ Bank"
+									>
+										<img
+											src="./bank/logo/kbz-bank.png"
+											class="footer-payment-method-icon"
+											alt="KBZBANK"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-bank p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="AYA Bank"
+									>
+										<img
+											src="./bank/logo/aya-bank.png"
+											class="footer-payment-method-icon"
+											alt="AYABANK"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-bank p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="YOMA Bank"
+									>
+										<img
+											src="./bank/logo/yoma-bank.png"
+											class="footer-payment-method-icon"
+											alt="YOMABANK"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-bank p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="CB Bank"
+									>
+										<img
+											src="./bank/logo/cb-bank.png"
+											class="footer-payment-method-icon"
+											alt="CBBANK"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-11 mx-auto">
+							<div class="col p-2">
+								<h6 class="text-xl-center text-lg-start p-2 m-0">
+									Delivery Method
+								</h6>
+								<div class="col text-xl-center text-lg-start p-2">
+									<a
+										href="#"
+										class="btn btn-footer-delivery p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="DHL"
+									>
+										<img
+											src="./delivery/logo/dhl.png"
+											class="footer-payment-method-icon"
+											alt="DHL"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-delivery p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="ninja van"
+									>
+										<img
+											src="./delivery/logo/ninjavan.png"
+											class="footer-payment-method-icon"
+											alt="NINJAVAN"
+										/>
+									</a>
+									<a
+										href="#"
+										class="btn btn-footer-delivery p-1 my-1"
+										data-bs-toggle="tooltip"
+										data-bs-placement="bottom"
+										data-bs-title="Royal Express"
+									>
+										<img
+											src="./delivery/logo/royalexpress.png"
+											class="footer-payment-method-icon"
+											alt="ROYALEXPRESS"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-11 mx-auto">
+							<div class="col p-2">
+								<h6 class="text-xl-center text-lg-start p-2 m-0">
+									Contact Information
+								</h6>
+								<div class="col p-2">
+									<a href="tel: 09951153115">
+										<p class="footer-phone text-break p-1 m-0">09951153115</p>
+									</a>
+									<a href="tel: 09955117011">
+										<p class="footer-phone text-break p-1 m-0">09955117011</p>
+									</a>
+									<a href="mail-to: htdcmyanmar@gmail.com">
+										<p class="footer-email text-break p-1 m-0">
+											htdcmyanmar@gmail.com
+										</p>
+									</a>
+									<a href="mail-to: sales@htdcmyanmar.com">
+										<p class="footer-email text-break p-1 m-0">
+											sales@htdcmyanmar.com
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-11 mx-auto">
+							<div class="col p-2">
+								<h6 class="text-xl-center text-lg-start p-2 m-0">
+									Our Location
+								</h6>
+								<div class="col p-2">
+									<p class="footer-address text-break lh-lg p-1 m-0">
+										No.31/33, Thiri Haymar Street, Zawana Ward, Thingangyun
+										Township, Yangon, Myanmar
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid max-width bg-main-01">
+				<div class="container">
+					<div class="row py-2">
+						<div
+							class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 text-md-start text-center p-2 my-auto"
+						>
+							<p class="text-white px-2 m-0">HTDC Myanmar &copy; 2023.</p>
+						</div>
+						<div
+							class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 text-md-end text-center px-2"
+						>
+							<a
+								href="https://www.facebook.com/yoonskin"
+								target="_blank"
+								class="btn btn-social"
+							>
+								<i class="fa-brands fa-facebook fa-lg"></i>
+							</a>
+							<a
+								href="https://www.instagram.com/yoonskinmyanmar/"
+								target="_blank"
+								class="btn btn-social"
+							>
+								<i class="fa-brands fa-instagram fa-lg"></i>
+							</a>
+							<a
+								href="https://www.youtube.com/@htuntheikdico.ltdhtdc2387"
+								target="_blank"
+								class="btn btn-social"
+							>
+								<i class="fa-brands fa-youtube fa-lg"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="./fontawesome/js/all.js"></script>
+		<script src="./jquery/jquery-3.7.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('[data-bs-toggle="tooltip"]').tooltip();
+			});
+		</script>
+	</body>
+</html>
